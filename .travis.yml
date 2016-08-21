@@ -1,0 +1,10 @@
+os:
+- linux
+- osx
+install: bash scripts/travis_install.sh
+script:
+    - export PATH=$HOME/anaconda/bin:$PATH
+    - which python
+    - bash scripts/travis_run.sh
+
+
